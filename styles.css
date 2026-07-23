@@ -6,6 +6,16 @@
   --accent: #d8653a;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e9ede5;
+    --muted: #abb4aa;
+    --paper: #182019;
+    --line: #3c473e;
+    --accent: #ff9b70;
+  }
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
