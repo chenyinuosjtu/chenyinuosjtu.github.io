@@ -1,0 +1,54 @@
+:root {
+  --ink: #18231b;
+  --muted: #657068;
+  --paper: #f7f5ef;
+  --line: #d9d8d0;
+  --accent: #d8653a;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "DM Mono", monospace;
+  font-size: 14px;
+  line-height: 1.65;
+}
+a { color: inherit; }
+.site-header, main, footer { max-width: 980px; margin: 0 auto; padding-inline: 28px; }
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+}
+.site-name { font-weight: 700; text-decoration: none; }
+nav { display: flex; gap: 22px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover, .post h3 a:hover { color: var(--accent); }
+.intro { max-width: 790px; padding: 142px 0 120px; }
+.eyebrow { color: var(--accent); font-size: 11px; letter-spacing: .09em; margin: 0 0 15px; text-transform: uppercase; }
+h1, h2, h3 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.05; }
+h1 { font-size: clamp(3.1rem, 7vw, 5.6rem); margin: 0; }
+h2 { font-size: 2.65rem; margin: 0; }
+.lede { color: var(--muted); font-size: 16px; margin: 27px 0 0; max-width: 530px; }
+.writing { border-top: 1px solid var(--line); padding: 52px 0 112px; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 22px; }
+.post { align-items: start; border-top: 1px solid var(--line); display: grid; gap: 24px; grid-template-columns: 150px 1fr auto; padding: 25px 0; }
+.post-date { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+.post h3 { font-size: 1.8rem; margin: 0 0 8px; }
+.post h3 a { text-decoration: none; }
+.post div p { color: var(--muted); margin: 0; }
+.arrow { color: var(--accent); font-size: 24px; text-decoration: none; }
+.about { border-top: 1px solid var(--line); max-width: 630px; padding: 52px 0 130px; }
+.about h2 { margin-bottom: 18px; }
+.about > p:last-child { color: var(--muted); font-size: 16px; }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; padding-block: 27px; }
+@media (max-width: 600px) {
+  .site-header, main, footer { padding-inline: 20px; }
+  .intro { padding: 105px 0 90px; }
+  .post { gap: 9px; grid-template-columns: 1fr auto; }
+  .post-date { grid-column: 1 / -1; }
+}
