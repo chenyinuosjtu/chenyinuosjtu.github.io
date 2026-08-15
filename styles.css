@@ -73,7 +73,7 @@ h2 { font-size: 2.65rem; margin: 0; }
 .post h3 { font-size: 1.8rem; margin: 0 0 8px; }
 .post h3 a { text-decoration: none; }
 .post div p { color: var(--muted); margin: 0; }
-.post-image { border-radius: 2px; display: block; height: 150px; margin-top: 18px; object-fit: cover; width: min(100%, 290px); }
+.post-image { border-radius: 2px; display: block; height: 82px; margin-top: 15px; object-fit: cover; width: 126px; }
 .arrow { color: var(--accent); font-size: 24px; text-decoration: none; }
 .about { border-top: 1px solid var(--line); max-width: 630px; padding: 52px 0 130px; }
 .about h2 { margin-bottom: 18px; }
